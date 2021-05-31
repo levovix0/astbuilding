@@ -18,7 +18,7 @@ proc buildAstImpl(a: NimNode): NimNode =
     let k = ident &"nnk{kind}"
     let c =
       if b.len == 0: b
-      elif b[^1].kind == nnkStmtList: b[0..^2] & b[^1]
+      elif b[^1].kind == nnkStmtList: b[0..^2] & b[^1][0..^1]
       else: b
     
     result = newCall(ident"newTree", k)
