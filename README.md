@@ -1,3 +1,5 @@
+Use [astdsl](https://nim-lang.github.io/fusion/src/fusion/astdsl.html) from [fusion](https://nimble.directory/pkg/fusion) instead
+
 Simple macros to build NimNode AST
 
 ```nim
